@@ -34,7 +34,9 @@ fetch('questions.json')
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-// const MAX_QUESTIONS = 4
+
+
+
 
 startGame = () => {
     questionCounter = 0;
@@ -45,8 +47,6 @@ startGame = () => {
     MAX_QUESTIONS = availableQuesions.length
     getNewQuestion();
 };
-
-
 
 getNewQuestion = () => {
     // if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
@@ -111,9 +111,6 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
-
-
-
 // //let questions = [
 // //    {
 // //      question: "Inside which HTML element do we put the JavaScript??",

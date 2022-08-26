@@ -1,0 +1,30 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Certificate Generator</title>  
+  <link rel="stylesheet" href="../assets/certificate.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">  
+  <link rel="icon" type="image/png" href="agapefavicon.png"/>  
+</head>  
+<body>  
+  <header>  
+    <div class="heading_text">  
+      <h1>Congratulations on completing the course succefully.</h1>  
+      <h2>To download the certificate, enter your name</h2>  
+    </div>  
+  </header>  
+  <main>  
+    <div>  
+      <input type="text" name="Name" class="question" id="name" required autocomplete="off" />  
+      <label for="name"><span>Please enter in your name as you would like it to appear on the Certificate of Completion</span></label>  
+      <input type="submit" id="submitBtn" value="Get Certificate"/>  
+    </div>  
+  </main>  
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>  
+  <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>  
+  <script src="fileSaver.js"></script>  
+  <script src="../assets/certificate.js"></script>  
+</body>  
+</html>  

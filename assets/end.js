@@ -2,7 +2,10 @@ const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
+var questionButton = document.getElementById("question-container");
 finalScore.innerText = mostRecentScore;
+
+const maxScore = 160;
 
 //Local storarge only save data in key value pair in the string format.
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
@@ -31,3 +34,11 @@ saveHighScore = (e) => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('../');
 };
+
+let totalScore = finalScore.innerText
+function createCertificate(totalScore,maxScore) {
+    if (((finalScore/maxScore)*100) >= 80){
+        certificate.classList.remove("hide");
+    }
+
+}
