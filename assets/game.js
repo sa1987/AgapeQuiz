@@ -20,12 +20,18 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
+
+function showAlert() {
+    var myText = "Sorry, You have ran out of time. Better luck next time!";
+    alert (myText);
+  }
 //timer
 function timeTick() {
     timeLeft--;
     timerEl.textContent = timeLeft;
     if (timeLeft <= 0) {
         //go to the end page
+        showAlert()
         return window.location.assign('../index.html');
     }
 }
