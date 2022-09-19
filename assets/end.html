@@ -51,7 +51,7 @@
           <div>  
             <input type="text" name="Name" class="question" id="name" required autocomplete="off" />  
             <label for="name"><span style="display: block">                                   </span></label>  
-            <input type="submit" id="submitBtn" value="Get Certificate"/>  
+            <input type="submit" id="submitBtn" value="Get Certificate" onclick="this.form.submit(); this.disabled = true; this.value = 'Submitting the form';"/>  
           </div>
         </section>
       </div>

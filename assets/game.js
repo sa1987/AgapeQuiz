@@ -26,7 +26,7 @@ function timeTick() {
     timerEl.textContent = timeLeft;
     if (timeLeft <= 0) {
         //go to the end page
-        return window.location.assign('end.html');
+        return window.location.assign('../index.html');
     }
 }
 
