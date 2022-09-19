@@ -6,7 +6,9 @@ const progressBarFull = document.getElementById("progressBarFull");
 //const questionCounterText = document.getElementById("questionCounter");
 const wrongAns = document.getElementById("wrongAns")
 const rightAns = document.getElementById("rightAns")
-
+var timeLeft = 180;
+var timerID;
+var timerEl = document.getElementById("timer");
 
 wrongAns.style.opacity = 0;
 rightAns.style.opacity = 0;
@@ -18,7 +20,15 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
-
+//timer
+function timeTick() {
+    timeLeft--;
+    timerEl.textContent = timeLeft;
+    if (timeLeft <= 0) {
+        //go to the end page
+        return window.location.assign('end.html');
+    }
+}
 
 fetch('questions.json')
     .then((res) => {
@@ -39,8 +49,11 @@ const CORRECT_BONUS = 10;
 
 
 startGame = () => {
+    //run every 1 second
+    timerID = setInterval(timeTick, 1000);
     questionCounter = 0;
     score = 0;
+    timeTick();
     //... spread out the questions into an array  
     availableQuesions = [...questions];
     // max questions determined based on length of the array 

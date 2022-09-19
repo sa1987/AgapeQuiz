@@ -1,4 +1,3 @@
-console.log("hello")
 const userName = document.getElementById("name");
 const submitBtn = document.getElementById("submitBtn");
 const { PDFDocument, rgb, degrees } = PDFLib;
@@ -37,7 +36,7 @@ const generatePDF = async (name) => {
    firstPage.drawText(name, {
      x: 300,
      y: 300,
-     size: 58,
+     size: 40,
      font: SanChezFont ,
      color: rgb(0.2, 0.84, 0.67),
    });

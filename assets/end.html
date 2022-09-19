@@ -7,6 +7,12 @@
     <title>Chapter Quiz - End Page</title>
     <link rel="stylesheet" href="end.css" />
     <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="../assets/certificate.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="agapefavicon.ico"/> 
+  
 </head>
 <body>
    <div class="topBanner">
@@ -17,17 +23,18 @@
   </div> 
      <div class="container">
       <div id="end" class="flex-center flex-column">
-        <h5> Congratulations on completing the quiz!!</h5>
+        <h5 id = "noCert" > Congratulations on completing the quiz!!</h5>
+        <h5 id = "yesCert" class="hide">Congratulations on completing the course succefully!!</h5> 
         <h6> Your score is</h6>
         <h3 id="finalScore"></h3>
-        <form>
+        <form id = "highScoreForm">
           <input
             type="text"
             name="username"
             id="username"
             placeholder="username"
           />
-          <button
+          <button 
             type="submit"
             class="btn"
             id="saveScoreBtn"
@@ -38,19 +45,22 @@
           </button>
         </form>
         <section id="certificate" class="hide">
-          <label id="initials-label">Click to enter your details and download the certificate</label>
-              <button
-            type="submit"
-            class="btn"
-            id="saveScoreBtn"
-            onclick="downloadCertificate(event)"
-          > Download Certificate
-        </button>
-
+          <!-- <label id="initials-label">Click to enter your details and download the certificate</label> -->
+           
+          <h6>To download the certificate, enter your name as you would like it to appear on the Certificate of Completion</h6>  
+          <div>  
+            <input type="text" name="Name" class="question" id="name" required autocomplete="off" />  
+            <label for="name"><span style="display: block">                                   </span></label>  
+            <input type="submit" id="submitBtn" value="Get Certificate"/>  
+          </div>
         </section>
       </div>
     </div>
     
     <script src="end.js"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>  
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>  
+    <script src="fileSaver.js"></script>  
+    <script src="../assets/certificate.js"></script>  
   </body>
 </html>

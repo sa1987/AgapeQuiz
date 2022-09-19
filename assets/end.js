@@ -3,7 +3,13 @@ const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 var questionButton = document.getElementById("question-container");
+// Get the highscore form details to hide if score is above 90% and enable certificate download option
+var form = document.getElementById("highScoreForm");
+// Get banner details to display the appropriate one
+var noCert = document.getElementById("noCert");
+var yesCert = document.getElementById("yesCert");
 finalScore.innerText = mostRecentScore;
+let saveHighScore;
 
 const maxScore = 160;
 
@@ -37,8 +43,12 @@ saveHighScore = (e) => {
 
 let totalScore = finalScore.innerText
 function createCertificate(totalScore,maxScore) {
-    if (((finalScore/maxScore)*100) >= 80){
+    if (((totalScore/maxScore)*100) >= 90){
         certificate.classList.remove("hide");
+        form.classList.add("hide");
+        yesCert.classList.remove("hide");
+        noCert.classList.add("hide");
     }
 
 }
+createCertificate(totalScore,maxScore) ;

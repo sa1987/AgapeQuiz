@@ -62,6 +62,10 @@
     color:#cc6600;
     font-size: 2rem;
   }
+  .hud-timer{
+   /* color:#f01027 ; */
+   font-size : 2rem;
+  }
   /* Score format*/
   h1 {
     margin-bottom: 3rem;
