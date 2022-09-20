@@ -1,3 +1,4 @@
+
 [
   {
     "question": "The open science movement is NOT attempting to make science…",
@@ -15,8 +16,8 @@
     "choice4": "Citizen science",
     "answer": 3
   },
-  {
-    "question": "Which of these benefits does open access bring?",
+{
+    "question": "Which of these benefits open access does NOT bring?",
     "choice1": "Application of your findings by practitioners and policy makers",
     "choice2": "Researchers in developing countries have access to your work",
     "choice3": "Your research gets more exposure and increases chance of getting future funding",
@@ -56,7 +57,7 @@
     "answer": 2
   },
   {
-    "question": "What should be included in a data management plan (DMP)?",
+    "question": "What should NOT be included in a data management plan (DMP)?",
     "choice1": "Data publishing impact",
     "choice2": "Dissemination methods",
   "choice3": "Legal and ethical requirements",
@@ -96,7 +97,7 @@
     "answer": 3
   },
    {
-    "question": "Which of the following factors are addressed by open science policies?",
+    "question": "Which of the following factors are NOT addressed by open science policies?",
     "choice1": "Restriction and anonymisation of personal data",
     "choice2": "Property rights, copyright and licencing",
     "choice3": "Provision of funding opportunities",
@@ -104,7 +105,7 @@
     "answer": 3
   },
     {
-    "question": "Which of the following belongs to general principles of scientific integrity?",
+    "question": "Which of the following does NOT belong to general principles of scientific integrity?",
     "choice1": "Impertinence",
     "choice2": "Accountability",
     "choice3": "Professional courtesy and fairness",
