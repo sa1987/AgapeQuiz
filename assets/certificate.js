@@ -1,7 +1,8 @@
 const userName = document.getElementById("name");
 const submitBtn = document.getElementById("submitBtn");
 const { PDFDocument, rgb, degrees } = PDFLib;
-
+let certID = parseInt(Math.random()*100000000000000000000, 10);
+console.log(certID)
 
 submitBtn.addEventListener("click", () => {
     const val =userName.value;
@@ -40,7 +41,13 @@ const generatePDF = async (name) => {
      font: SanChezFont ,
      color: rgb(0.2, 0.84, 0.67),
    });
- 
+   firstPage.drawText(certID.toString(), {
+    x: 100,
+    y: 10,
+    size: 10,
+    font: SanChezFont ,
+    color: rgb(0.2, 0.84, 0.67),
+  });
   // Serialize the PDFDocument to bytes (a Uint8Array)
   const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
   saveAs(pdfDataUri,"newcertificate.pdf")
