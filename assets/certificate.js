@@ -44,7 +44,7 @@ const generatePDF = async (name) => {
    firstPage.drawText(certID.toString(), {
     x: 100,
     y: 10,
-    size: 10,
+    size: 8,
     font: SanChezFont ,
     color: rgb(0.2, 0.84, 0.67),
   });
