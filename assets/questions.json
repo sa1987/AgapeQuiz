@@ -1,4 +1,3 @@
-
 [
   {
     "question": "The open science movement is NOT attempting to make science…",
@@ -28,7 +27,7 @@
     "question": "Which of these claims about open data is NOT true?",
     "choice1": "Data can be accessed and shared.",
     "choice2": "Data that can be accessed and reused by anyone for any purpose without technical or legal restrictions.",
-  "choice3": "Data can be reused free of charge.",
+    "choice3": "Data can be reused free of charge.",
     "choice4": "Data can be sold to other interested parties.",
     "answer": 4
   },
@@ -60,7 +59,7 @@
     "question": "What should NOT be included in a data management plan (DMP)?",
     "choice1": "Data publishing impact",
     "choice2": "Dissemination methods",
-  "choice3": "Legal and ethical requirements",
+    "choice3": "Legal and ethical requirements",
     "choice4": "Data storage and preservation strategy",
     "answer": 1
   },
