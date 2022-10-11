@@ -6,7 +6,7 @@ const progressBarFull = document.getElementById("progressBarFull");
 //const questionCounterText = document.getElementById("questionCounter");
 const wrongAns = document.getElementById("wrongAns")
 const rightAns = document.getElementById("rightAns")
-var timeLeft = 180;
+var timeLeft = 300;
 var timerID;
 var timerEl = document.getElementById("timer");
 
