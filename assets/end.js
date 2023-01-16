@@ -16,7 +16,7 @@ const maxScore = 160;
 //Local storarge only save data in key value pair in the string format.
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
-// max display top 5 results
+// max display top 5 results in the high scores tab
 const MAX_HIGH_SCORES = 5;
 
 username.addEventListener('keyup', () => {
@@ -42,6 +42,7 @@ saveHighScore = (e) => {
 };
 
 let totalScore = finalScore.innerText
+// current cut off is 90% . Options and labels are enabled/disabled based on the cut off scores. 
 function createCertificate(totalScore,maxScore) {
     if (((totalScore/maxScore)*100) >= 90){
         certificate.classList.remove("hide");
