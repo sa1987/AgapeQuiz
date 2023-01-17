@@ -2,8 +2,6 @@
 
 The quiz was created for the [agape openscience course](https://sa1987.github.io/OpenDoorProject). 
 
-![](asstes/agape.jpg){width="520"}
-
 <h4 align="center">
 
 # AGAPE quiz and certificate generator
