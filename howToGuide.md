@@ -1,4 +1,4 @@
-## Getting started with using the Javascript based quiz and certificate
+## Getting started with using the Javascript based quiz and certificate generator
 
 Agape quiz is a java script based online quiz hosted through GitHub, as a part of the Agape initiative. You can create your own quiz and certificates using the Agape quiz template.
 
