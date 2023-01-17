@@ -25,6 +25,7 @@ The quiz has multiple choice questions, timer and certificate generator. The cer
 
 Some of the features of the quiz are :
 Score system
+Timer 
 Highscore board
 Dynamic progress bar
 Restart and clear button
