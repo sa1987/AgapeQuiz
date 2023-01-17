@@ -2,106 +2,13 @@
 
 The quiz was created for the [agape openscience course](https://sa1987.github.io/OpenDoorProject). 
 
-Developed using the template provided by [ James Q Quick](https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript).
-
-Features of the quiz:
-#### Score;
-#### highscore board;
-#### Dynamic progress bar;
-#### Restart and clear button;
-
-
-For more details, contact Agape team. 
-
-<!-- Adapted from othneildrew's git See: https://github.com/https://github.com/othneildrew/Best-README-Template -> # <a name="readme-top"></a> # [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)  # <!-- PROJECT SHIELDS -->
-
-<!-- # *** I'm using markdown "reference style" links for readability. # *** Reference links are enclosed in brackets [ ] instead of parentheses ( ). # *** See the bottom of this document for the declaration of the reference variables # *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use. # *** https://www.markdownguide.org/basic-syntax/#reference-style-links # -->
-
-<!--#  -->
-
-[![Contributors](https://img.shields.io/github/contributors/sa1987/OpenDoorProject.svg?style=for-the-badge)](https://github.com/sa1987/OpenDoorProject/graphs/contributors) [![Forks](https://img.shields.io/github/forks/sa1987/OpenDoorProject.svg?style=for-the-badge)](https://github.com/sa1987/OpenDoorProject/network/members) [![Stargazers](https://img.shields.io/github/stars/sa1987/OpenDoorProject.svg?style=for-the-badge)](https://github.com/sa1987/OpenDoorProject/stargazers) [![Issues](https://img.shields.io/github/issues/sa1987/OpenDoorProject.svg?style=for-the-badge)](https://github.com/sa1987/OpenDoorProject/issues)
-
-[![Agape Blog](https://img.shields.io/badge/Made%20with-R%20blogdown%20-orange)](https://github.com/sa1987/OpenDoorProject/) [![Agape Course](https://img.shields.io/badge/Made%20with-R%20bookdown-lightgrey)](https://github.com/sa1987/OpenDoorProject) [![License](https://licensebuttons.net/l/by-nd/3.0/88x31.png)](https://github.com/sa1987/OpenDoorProject/blob/main/LICENSE)
-
-<!-- PROJECT LOGO -->
-
-<!--#  -->
-
-<br />
-
-![](images/agapecover.png){width="520"}
+![](asstes/agape.jpg){width="520"}
 
 <h4 align="center">
 
-AGAPE Open science introductory course
+# AGAPE quiz and certificate generator
 
 </h4>
-
-\#
-
-<p style="text-align: center;">
-
-<h5 align="center">
-
-AGAPE: An introductory course to open science for early career researchers <br /> <a href="www.agapeopenscience.com">View the Agape open science introductory course</a> <br /> <br /> <a href="https://agape-openscience-blog.netlify.app"><strong>Explore the blog »</strong></a> · <a href="https://github.com/sa1987/OpenDoorProject/issues">Report Bug</a> · <a href="https://github.com/sa1987/OpenDoorProject/issues">Request Feature</a>
-
-\#
-
-</p>
-
-</h5>
-
-<!-- TABLE OF CONTENTS -->
-
-<details>
-
-<summary>Table of Contents</summary>
-
-<ol>
-
-<li>
-
-<a href="#about-the-Agape-project">About The Agape Project</a>
-
-<ul>
-
-<li><a href="#built-with">Built With</a></li>
-
-</ul>
-
-</li>
-
-<li>
-
-<a href="#getting-started">Getting Started</a>
-
-<ul>
-
-<li><a href="#prerequisites">Prerequisites</a></li>
-
-<li><a href="#installation">Installation</a></li>
-
-</ul>
-
-</li>
-
-<li><a href="#usage">Usage</a></li>
-
-<li><a href="#roadmap">Roadmap</a></li>
-
-<li><a href="#contributing">Contributing</a></li>
-
-<li><a href="#Commmunity guidelines">Commmunity guidelines</a></li>
-
-<li><a href="#license">License</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-<li><a href="#acknowledgments">Acknowledgments</a></li>
-
-</ol>
-
-</details>
 
 <!-- ABOUT THE PROJECT -->
 
@@ -113,6 +20,18 @@ Welcome to our open science initiative! Under our Agape initiative, we aim to ge
 
 Under Agape we aim to disseminate open science between PhD students and early career researchers across Ireland and later internationally. We want to create an open science practising community where we can learn, exchange our opinions and experiences, and together change the future. In the way that science is undertaken, made freely available, and communicated in a FAIR and transparent way.
 
+### Agape Quiz 
+
+Agape quiz is a java script based online quiz hosted through GitHub, as a part of the Agape initiative. You can create your own quiz and certificates using the Agape quiz template.
+The quiz has multiple choice questions, timer and certificate generator. The certificate generator feature become accessible only of you meet the cut-off score(at least 90%) and you can customize the certificate by adding your name. Each certificate comes with a unique id and the score, unique ID and name is saved only in your local cache. 
+
+Some of the features of the quiz are :
+Score system
+Highscore board
+Dynamic progress bar
+Restart and clear button
+Customizable certificate generator
+
 Start the learning by checking out our <a href="https://agape-openscience-blog.netlify.app"><strong> agape blog »</strong></a>
 
 <p align="right">
@@ -121,43 +40,19 @@ Start the learning by checking out our <a href="https://agape-openscience-blog.n
 
 </p>
 
-### About this book
+### About this quiz app
 
-This book is created based on R Markdown and **bookdown** using the example provided by [rstudio](https://github.com/rstudio/bookdown) and [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/index.html).
-
-You can use this template to customise and create your own book. The **how to** guide for customising this template is available in this [link](https://github.com/sa1987/OpenDoorProject/blob/main/HowToGuide.md)
-
-Additional resources to create a bookdown book:
-
-The **bookdown** book: <https://bookdown.org/yihui/bookdown/>
-
-The **bookdown** package reference site: <https://pkgs.rstudio.com/bookdown>
-
-Quiz templates and customization guide is available in the quiz [repo](https://github.com/sa1987/AgapeQuiz)
-
-### Built With
-
-Please see below the major frameworks/libraries used to bootstrap the Agape project
-
--   [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
--   [![made-with-R-Bookdown](https://img.shields.io/badge/Made%20with-R%20bookdown-lightgrey)](https://github.com/sa1987/OpenDoorProject/)
--   [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
-
-<p align="right">
-
-(<a href="#readme-top">back to top</a>)
-
-</p>
+More details about the template and it's customization guide is available in the 'How To'  [guide](https://github.com/sa1987/AgapeQuiz/blob/main/howToGuide.md)
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
-This is the official github repository of the Agape open scneince course.
+This is the official github repository of the Agape open science quiz app.
 
 ### Prerequisites
 
-There are no pre-requisites to complete the course.
+We recommend checking out the Agape introductory course before attempting the quiz.
 
 #### Installation
 
@@ -167,7 +62,7 @@ You can use this template to customise and create your own book. The **how to** 
 
 ## Usage
 
-You can use this repository create for creating similar handbooks. The copyright policy is detailed in the license section.
+You can use this repository create for creating similar hanquiz apps. The copyright policy is detailed in the license section.
 
 <p align="right">
 
@@ -250,7 +145,7 @@ To know more about our community guidelines, please refer to the following links
 
 ## License
 
-Distributed under the CC-BY-NC license. See `LICENSE.txt` for more information.
+Distributed under the GNU General Public License v3.0 license. See `LICENSE.txt` for more information.
 
 <p align="right">
 
@@ -258,7 +153,6 @@ Distributed under the CC-BY-NC license. See `LICENSE.txt` for more information.
 
 </p>
 
-[![licensebuttons by-nd](https://licensebuttons.net/l/by-nd/3.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0)
 
 <!-- CONTACT -->
 
@@ -303,9 +197,9 @@ We would like to thank the people and organisations that helped us to create the
 -   [Opening door's program](https://www.insight-centre.org/opening-doors-online-course-for-europe-will-reimagine-phd-education/)
 -   [Img Shields](https://shields.io)
 -   [GitHub Pages](https://pages.github.com)
--   Minimal bookdown template by [jtr13](https://github.com/jtr13/bookdown-template)
--   Setup guide by the [P2PU](https://github.com/p2pu/course-in-a-box)
--   Yihui's [guide](https://bookdown.org/yihui/bookdown/html.html) for bookdown
+-   [Quiz template by James Q Quick](https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript)
+-   [Certificate generator template by Rohan Patel](https://github.com/patelrohan750/certificate_generator).
+
 
 <p align="right">
 
