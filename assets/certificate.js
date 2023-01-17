@@ -1,6 +1,7 @@
 const userName = document.getElementById("name");
 const submitBtn = document.getElementById("submitBtn");
 const { PDFDocument, rgb, degrees } = PDFLib;
+//create unique ID
 let certID = parseInt(Math.random()*100000000000000000000, 10);
 console.log(certID)
 
@@ -41,6 +42,7 @@ const generatePDF = async (name) => {
      font: SanChezFont ,
      color: rgb(0.2, 0.84, 0.67),
    });
+   //update the unique ID
    firstPage.drawText(certID.toString(), {
     x: 100,
     y: 10,
