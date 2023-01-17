@@ -3,6 +3,13 @@
 Agape quiz is a java script based online quiz hosted through GitHub, as a part of the Agape initiative. You can create your own quiz and certificates using the Agape quiz template.
 The quiz has multiple choice questions, timer and certificate generator. The certificate generator feature become accessible only of you meet the cut-off score(at least 90%) and you can customize the certificate by adding your name. Each certificate comes with a unique id and the score, unique ID and name is saved only in your local cache. 
 
+Some of the features of the quiz are :
+Score system
+Highscore board
+Dynamic progress bar
+Restart and clear button
+Customizable certificate generator
+
 To start, you'll need a (free) [GitHub account](https://github.com/join).
 
 You can achieve the minimal customization required by following this guide. However, a minimal knowledge of the coding or javascript is useful for more detailed customization . For a great basic primer on GitHub, check out [Hello World](https://guides.github.com/activities/hello-world/) and the [GitHub Term Glossary](https://docs.github.com/en/github/getting-started-with-github/github-glossary). If you get stuck at any point in the setup process, head to our [community forum](linktobeupdated) and someone can help you out!
@@ -169,6 +176,8 @@ Certificate generator template provided by [Rohan Patel](https://github.com/pate
 ## Join Us
 
 Be a part of the Agape Community by joining our [Mattermost](https://agape.cloud.mattermost.com/) community channel. Here you can discuss about the project or ask any other queries and there will be a lot of folks to help.
+
+Start the learning by checking out our <a href="https://agape-openscience-blog.netlify.app"><strong> agape blog »</strong></a> or <a href="https://sa1987.github.io/OpenDoorProject/"><strong> agape open science introductory  course »</strong></a> 
 
 #### Disclaimer
 
